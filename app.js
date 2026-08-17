@@ -239,9 +239,8 @@ function renderCatalog() {
               <span class="price-main">${fmt(p.price)}</span>
               ${p.oldPrice ? `<span class="price-old">${fmt(p.oldPrice)}</span>` : ''}
             </div>
-            <button class="btn-add-card" onclick="addToCart('${p.id}')">
+            <button class="btn-add-card" onclick="addToCart('${p.id}')" title="Agregar al pedido">
               <i class="fa-solid fa-cart-shopping"></i>
-              <span>Pedir</span>
             </button>
           </div>
         </div>
