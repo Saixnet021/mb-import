@@ -352,10 +352,10 @@ header.site-header {
 }
 
 .btn-primary {
-  background: #111827;
-  color: #FFFFFF;
+  background: var(--cat-yellow);
+  color: #000000;
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.04em;
   padding: 13px 26px;
@@ -365,11 +365,15 @@ header.site-header {
   align-items: center;
   gap: 8px;
   transition: var(--transition);
-  border: none;
+  border: 1px solid var(--cat-yellow);
   cursor: pointer;
+  box-shadow: 0 2px 8px rgba(255, 205, 0, 0.25);
 }
 .btn-primary:hover {
-  background: #000000;
+  background: var(--cat-yellow-hover);
+  border-color: var(--cat-yellow-hover);
+  box-shadow: 0 4px 14px rgba(255, 205, 0, 0.4);
+  transform: translateY(-1px);
 }
 
 .hero-media-card {
@@ -780,10 +784,10 @@ header.site-header {
   border-color: var(--text-main);
 }
 .size-box.active {
-  background: #111827;
-  color: #FFFFFF;
-  border-color: #111827;
-  font-weight: 700;
+  background: var(--cat-yellow);
+  color: #000000;
+  border-color: var(--cat-yellow-dark);
+  font-weight: 800;
 }
 
 /* Card Bottom */
